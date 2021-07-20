@@ -1,19 +1,19 @@
 import React, {useState} from 'react';
 
-export default function Cadastro(props) {
+export default function Home() {
 
-        const [post, setPost] = useState({})
+    const [post, setPost] = useState({})
 
-        const submit = (e) => {
+    const submit = (e) => {
 
-            e.preventDefault();
-            console.log(post)
-            
-          }
+        e.preventDefault();
+        console.log(post)
+        
+      }
 
     return(
         <>
-            <form onSubmit={submit}>
+        <form onSubmit={submit}>
                 <label>Title: </label>
                     <input type="text" name="title" onChange={e => setPost({...post, title: e.target.value})}/>
                     <br />
@@ -22,7 +22,8 @@ export default function Cadastro(props) {
                     </textarea>
                     <br />
                     <input type="submit"/>
-            </form>  
+            </form>
         </>
+
     )
 }
