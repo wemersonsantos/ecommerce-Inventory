@@ -53,8 +53,8 @@ export default function Cadastro(props) {
                     <input type='number' id='rg' name='rg' className='formCadastro' onChange={e => setUsers({...users, RG: e.target.value})}/>
     
                     <label>Sexo</label>
-                    <input type='radio' id='Masc' name='sex' className='formCadastro' onChange={e => setUsers({...users, Sex: e.target.value})}/><label>Masculino</label>
-                    <input type='radio' id='Fem' name='sex' className='formCadastro' onChange={e => setUsers({...users, Sex: e.target.value})}/><label>Feminino</label>
+                    <input type='radio' id='sex' name='sex' value='Masc' className='formCadastro' onChange={e => setUsers({...users, Sex: e.target.value})}/><label>Masculino</label>
+                    <input type='radio' id='sex' name='sex' value='Fem' className='formCadastro' onChange={e => setUsers({...users, Sex: e.target.value})}/><label>Feminino</label>
                 </fieldset>
                 <fieldset>
                     <legend className='titleForm'>Endereço do Usuário</legend>
@@ -79,7 +79,7 @@ export default function Cadastro(props) {
                     <label>Pais</label>
                     <input type='text' id='country' name='country' className='formCadastro' onChange={e => setAdress({...adress, country: e.target.value})}/>
                 </fieldset>
-            <button type='submit' >Cadastrar</button>
+            <button type='submit'>Cadastrar</button>
             </form>  
         </>
     )
