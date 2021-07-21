@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function Hearder() {
+export default function Header() {
 
     return(
         <>
-        <h1>Hearder</h1>
+        <h1>Header</h1>
         </>
 
     )
