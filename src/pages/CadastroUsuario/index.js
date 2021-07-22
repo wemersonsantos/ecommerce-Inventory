@@ -1,16 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import { useHistory } from 'react-router-dom';
 
 export default function Cadastro(props) {
 
         const history = useHistory();
-
-        useEffect(()=>{
-            let registerUser = localStorage.getItem('registerUser');
-            if(registerUser === null){
-                history.push('/');
-            }   
-        }, []);
 
         const usersRegister = {
             fullName: '',

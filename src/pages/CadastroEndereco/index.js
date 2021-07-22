@@ -1,16 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 export default function Cadastro(props) {
 
         const history = useHistory();
-
-        useEffect(()=>{
-            let registerAdress = localStorage.getItem('registerAdress');
-            if(registerAdress === null){
-                history.push('/');
-            }   
-        }, []);
 
         const usersAdress = {
             adress: '',
@@ -25,8 +18,9 @@ export default function Cadastro(props) {
         const [adress, setAdress] = useState(usersAdress)
  
         function submit(){
-            localStorage.setItem('registerAdress', JSON.stringify(adress));  
-            history.push('/cadastroProduto'); 
+            localStorage.setItem('registerAdress', JSON.stringify(adress));
+            alert('Cadastro realizado com sucesso'); 
+            history.push('/'); 
           }
 
     return(

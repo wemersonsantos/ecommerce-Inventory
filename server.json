@@ -1,0 +1,32 @@
+{
+    "produtos":[
+        {
+            "id":1,
+            "photo":"https://www.pngitem.com/pimgs/m/534-5343044_action-figure-homem-aranha-deluxe-action-figure-spider.png",
+            "description":"Action figure do Homem aranha",
+            "name":"Homem Aranha",
+            "price":300
+        },
+        {
+            "id":2,
+            "photo":"https://www.kindpng.com/picc/m/277-2773962_shazam-funko-pop-hd-png-download.png",
+            "description":" Nendoroid do Shazam personagem da DC Comics",
+            "name":"Nendoroid do Shazam",
+            "price":150
+        },
+        {
+            "id":3,
+            "photo":"https://i2.wp.com/http2.mlstatic.com/marvel-legends-guante-de-thanos-infinity-war-hasbro-D_NQ_NP_792685-MCO27186914521_042018-F.jpg",
+            "description":"Manopla do infinito utilizada por Thanos, o titã louco, em Vingadores",
+            "name":"Manopla do infinito",
+            "price":500
+        },
+        {
+            "id":4,
+            "photo":"https://a-static.mlcdn.com.br/618x463/delorean-dmc-12-back-to-the-future-iii-escala-1-43-vitesse/lacrossvirtual/492/0ab35c529f0a784676b7b19a8e6cbfb2.jpg",
+            "description":"miniaruta do Delorean de 'De Volta para o Futuro'",
+            "name":"miniaruta Delorean",
+            "price":250
+        }
+    ]
+}
