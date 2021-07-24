@@ -20,6 +20,8 @@ Página 'cadastro endereço' segue a mesma estrutura de pensamento.
 Apenas receberam algumas informações e cores. Utilizei Styled-Components para facilitar e ser mais eficiente na parte de CSS.
 Styled-components é utilizado em toda a página.
 
+Para ativar o site, utiliza o yarn start para iniciar a API.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
