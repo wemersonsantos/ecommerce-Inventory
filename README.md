@@ -1,5 +1,6 @@
 # Desafio-2
 Obejtivo desse desafio era construir uma página ecommerce que tivesse a funcionalidade de cadastrar alguns itens do interesse do usuário no localStorage e também os dados pessoais e endereço.
+utilizei o My JSON Server para criar um fake server e coloquei a rota da API para ele
 
 # Página Home
 Cria uma estado chamado 'data' e a variavel de estado chamada de 'setData'. Com isso eu tenho um Array que irá colocar os dados dos produtos(que estão localizados no server.json) no localStorage assim que o botão Adicionar ao carrinho for clicado.
