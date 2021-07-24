@@ -6,7 +6,7 @@ export default function Header() {
     return(
         <S.Header>
             <S.Title>Dark Nerd</S.Title>
-            <S.SubTitle>Aqui você pode ser o que quiser</S.SubTitle>
+            <S.SubTitle>Aqui você pode ser o que quiser!</S.SubTitle>
         </S.Header>
     )
 }

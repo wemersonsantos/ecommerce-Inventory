@@ -27,19 +27,22 @@ export default function Home() {
     }
 
     return(
-        <S.Section>
-            {data.map((prod, index )=> (
-                    <S.Div>
-                    <img src={prod.photo} alt="homem aranha" width="200" key={prod.id}/>
-                    <S.H2>{prod.name}</S.H2>
-                    <span>{prod.description}</span>
-                    <S.H3>R$ {prod.priceOld}.00</S.H3>
-                    <S.H4>R$ {prod.priceNow}.00</S.H4>
-                    <S.Button type="button" onClick={()=>Cart(index)}>Adicionar ao carrinho</S.Button>
-                    </S.Div>
-                ))
-            }  
-        <button type='button' onClick={()=>Cadastrar()}>Cadastrar</button>
-        </S.Section>
+        <main role='main'>
+            <S.Section>
+                {data.map((prod, index )=> (
+                        <S.Div>
+                        <img src={prod.photo} alt="homem aranha" width="200" key={prod.id}/>
+                        <S.H2>{prod.name}</S.H2>
+                        <S.Span>{prod.description}</S.Span>
+                        <S.H3>R$ {prod.priceOld}.00</S.H3>
+                        <S.H4>R$ {prod.priceNow}.00</S.H4>
+                        <S.Button type="button" onClick={()=>Cart(index)}>Adicionar ao carrinho</S.Button>
+                        </S.Div>
+                    ))
+                }  
+            
+            </S.Section>
+            <S.DivB><S.ButtonC type='button' onClick={()=>Cadastrar()}><b>Cadastrar</b></S.ButtonC></S.DivB>
+        </main>
     )
 }

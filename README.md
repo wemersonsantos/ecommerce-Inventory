@@ -1,3 +1,25 @@
+# Desafio-2
+Obejtivo desse desafio era construir uma página ecommerce que tivesse a funcionalidade de cadastrar alguns itens do interesse do usuário no localStorage e também os dados pessoais e endereço.
+
+# Página Home
+Cria uma estado chamado 'data' e a variavel de estado chamada de 'setData'. Com isso eu tenho um Array que irá colocar os dados dos produtos(que estão localizados no server.json) no localStorage assim que o botão Adicionar ao carrinho for clicado.
+Eu importo uma Api, criando uma espécie de sevidor falso, que por sua vez me permiti criar de maneira condicional a estrutura Div que mostrará na tela do usuário os produtos. 
+E adiciono no localStorage por meio do index os itens.
+Uso também o useHistory para que eu utilize rotas e possa mudar de diretório assim que o comando history.push() for chamado.
+
+# Página Cadastro usuário
+Neste página utiliza uma técnica parecida com a Home. Crio o formulário, estrutura básica, a variável de estado recebe um valor de objeto com chaves e valores vazias (''). 
+
+ACRESCENTANDO VALORES
+onChange={e => setUsers({...users, fullName: e.target.value})} 
+Com essa lógica eu acesso o valor anterior do objeto, uso o spread para expandir o objeto e assim acrescentar um novo valor a ele. Esse valor será o nome completo, neste campo. Os demais campos seguem a mesma lógica.
+
+Página 'cadastro endereço' segue a mesma estrutura de pensamento.
+
+# Página Header e Footer
+Apenas receberam algumas informações e cores. Utilizei Styled-Components para facilitar e ser mais eficiente na parte de CSS.
+Styled-components é utilizado em toda a página.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -3,10 +3,9 @@ import styled from "styled-components";
 export const Header = styled.header`
     widht: 100%;
     margin: 2px;
-    height: 150px;
+    height: 100px;
     background-color: #96281b;
-    
-    
+    border-radius: .7rem;   
 `
 
 export const Title = styled.h1`
@@ -19,5 +18,6 @@ export const Title = styled.h1`
 export const SubTitle = styled.h2`
     text-align: center; 
     font-size: 1.2rem;
+    margin: 0;
 `
 

@@ -23,23 +23,22 @@ export default function Cadastro(props) {
 
     return(
         <>
-            <S.H2>Cadastro do Cliente</S.H2>
-
             <S.Form onSubmit={submit}>
+            <S.H2>Cadastro do Cliente</S.H2>
                 <S.Fieldset>
-                    <label>Nome Completo</label>
+                    <S.Label>Nome Completo</S.Label>
                     <input type='text' id='name' name='fullName' value={users.fullName} className='formCadastro' onChange={e => setUsers({...users, fullName: e.target.value})} />
     
-                    <label>Email</label>
+                    <S.Label>Email</S.Label>
                     <input type='email' id='email' name='email' value={users.email} className='formCadastro' onChange={e => setUsers({...users, email: e.target.value})}/>
     
-                    <label>Telefone(DDD)</label>
+                    <S.Label>Telefone(DDD)</S.Label>
                     <input type='number' id='phone' name='phone' value={users.phone} className='formCadastro' onChange={e => setUsers({...users, phone: e.target.value})}/>
     
-                    <label>CPF/CNPJ</label>
+                    <S.Label>CPF/CNPJ</S.Label>
                     <input type='number' id='register' name='register' value={users.cpfcnpj} className='formCadastro' onChange={e => setUsers({...users, cpfcnpj: e.target.value})}/>
     
-                    <label>RG</label>
+                    <S.Label>RG</S.Label>
                     <input type='number' id='rg' name='rg' value={users.rg} className='formCadastro' onChange={e => setUsers({...users, rg: e.target.value})}/>
     
                 </S.Fieldset>

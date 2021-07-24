@@ -20,7 +20,6 @@ export const Fieldset = styled.fieldset`
     border: none;
     display:flex;
     flex-direction: column;
-    
 `
 export const Button = styled.button`
     min-width: 200px;
