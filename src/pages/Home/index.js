@@ -14,7 +14,7 @@ export default function Home() {
     const [data, setData] = useState([]);
 
     useEffect(()=>{
-        api.get('').then(
+        api.get('/produtos').then(
             response => {
                 setData(response.data);
             }
