@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { useHistory } from 'react-router-dom';
+import * as S from './styled'
 
 export default function Cadastro(props) {
 
@@ -10,8 +11,7 @@ export default function Cadastro(props) {
             email: '',
             phone: '',
             cpfcnpj:'',
-            rg:'',
-            sex:''
+            rg:''
         }
 
         const [users, setUsers] = useState(usersRegister)
@@ -23,11 +23,10 @@ export default function Cadastro(props) {
 
     return(
         <>
-            <h3>Cadastro Cliente</h3>
+            <S.H2>Cadastro do Cliente</S.H2>
 
-            <form  onSubmit={submit}>
-                <fieldset>
-                    <legend className='titleForm'>Dados do Usuário</legend>
+            <S.Form onSubmit={submit}>
+                <S.Fieldset>
                     <label>Nome Completo</label>
                     <input type='text' id='name' name='fullName' value={users.fullName} className='formCadastro' onChange={e => setUsers({...users, fullName: e.target.value})} />
     
@@ -43,12 +42,9 @@ export default function Cadastro(props) {
                     <label>RG</label>
                     <input type='number' id='rg' name='rg' value={users.rg} className='formCadastro' onChange={e => setUsers({...users, rg: e.target.value})}/>
     
-                    <label>Sexo</label>
-                    <input type='radio' id='sex' name='sex' value='Masc' className='formCadastro' onChange={e => setUsers({...users, sex: e.target.value})}/><label>Masculino</label>
-                    <input type='radio' id='sex' name='sex' value='Fem' className='formCadastro' onChange={e => setUsers({...users, sex: e.target.value})}/><label>Feminino</label>
-                </fieldset>
-            <button type='submit'>Cadastrar</button>
-            </form>  
+                </S.Fieldset>
+            <S.Button type='submit'><b>Cadastrar</b></S.Button>
+            </S.Form>  
         </>
     )
 }

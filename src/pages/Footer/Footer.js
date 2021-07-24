@@ -1,10 +1,13 @@
 import React from 'react';
+import * as S from './styled';
 
 export default function Footer() {
 
     return(
         <>
-        <h1>Footer</h1>
+        <S.Footer>
+
+        </S.Footer>
         </>
 
     )

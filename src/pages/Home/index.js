@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { useHistory } from 'react-router-dom';
-import api from '../../services/api'
+import api from '../../services/api';
+import * as S from './styled'; 
 
 export default function Home() {
 
@@ -26,21 +27,19 @@ export default function Home() {
     }
 
     return(
-        <>
-        <h1>Home</h1>
-        <section>
+        <S.Section>
             {data.map((prod, index )=> (
-                    <div>
+                    <S.Div>
                     <img src={prod.photo} alt="homem aranha" width="200" key={prod.id}/>
-                    <h4>{prod.name}</h4>
+                    <S.H2>{prod.name}</S.H2>
                     <span>{prod.description}</span>
-                    <h6>{prod.price}</h6>
-                    <button type="button" onClick={()=>Cart(index)}>Adicionar ao carrinho</button>
-                    </div>
+                    <S.H3>R$ {prod.priceOld}.00</S.H3>
+                    <S.H4>R$ {prod.priceNow}.00</S.H4>
+                    <S.Button type="button" onClick={()=>Cart(index)}>Adicionar ao carrinho</S.Button>
+                    </S.Div>
                 ))
             }  
-        </section>
         <button type='button' onClick={()=>Cadastrar()}>Cadastrar</button>
-        </>
+        </S.Section>
     )
 }
